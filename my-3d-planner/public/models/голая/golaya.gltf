@@ -1,0 +1,1122 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        255.728759765625,
+        223.609619140625,
+        417.14532470703125
+      ],
+      "min": [
+        -255.689697265625,
+        -223.60986328125,
+        -327.69976806640625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 786384,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        3.813971519470215,
+        30.12205696105957
+      ],
+      "min": [
+        -3.7779715061187744,
+        -5.3199896812438965
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 299514,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1572768,
+      "componentType": 5126,
+      "count": 35503,
+      "max": [
+        249.580078125,
+        74.58680725097656,
+        1.7696313858032227
+      ],
+      "min": [
+        -249.5283203125,
+        -221.1219482421875,
+        -306.95562744140625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1998804,
+      "componentType": 5126,
+      "count": 35503,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 524256,
+      "componentType": 5126,
+      "count": 35503,
+      "max": [
+        0.9799390435218811,
+        30.12205696105957
+      ],
+      "min": [
+        -0.9317482113838196,
+        -6.078531265258789
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1198056,
+      "componentType": 5125,
+      "count": 187260,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2424840,
+      "componentType": 5126,
+      "count": 2088,
+      "max": [
+        249.08154296875,
+        219.06021118164063,
+        -184.46499633789063
+      ],
+      "min": [
+        -249.04248046875,
+        -219.06021118164063,
+        -266.4213562011719
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2449896,
+      "componentType": 5126,
+      "count": 2088,
+      "max": [
+        0.972298800945282,
+        0.9993424415588379,
+        0.707105278968811
+      ],
+      "min": [
+        -0.9722985625267029,
+        -0.9993424415588379,
+        -0.7058497667312622
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2088,
+      "max": [
+        0.9999943375587463,
+        0.9652952551841736,
+        0.9985004663467407,
+        1.0
+      ],
+      "min": [
+        -0.9999942779541016,
+        -0.9652950763702393,
+        -0.06285221129655838,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 808280,
+      "componentType": 5126,
+      "count": 2088,
+      "max": [
+        0.8269797563552856,
+        4.764256477355957
+      ],
+      "min": [
+        0.1388646364212036,
+        -4.764256477355957
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1947096,
+      "componentType": 5125,
+      "count": 10080,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2474952,
+      "componentType": 5126,
+      "count": 1446,
+      "max": [
+        257.2853088378906,
+        225.01573181152344,
+        -6.041419982910156
+      ],
+      "min": [
+        -257.2462463378906,
+        -225.0157470703125,
+        -98.29487609863281
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2492304,
+      "componentType": 5126,
+      "count": 1446,
+      "max": [
+        0.9984803795814514,
+        0.9990482926368713,
+        0.9987083077430725
+      ],
+      "min": [
+        -0.9984803795814514,
+        -0.9990482330322266,
+        -0.6426146626472473
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 824984,
+      "componentType": 5126,
+      "count": 1446,
+      "max": [
+        0.5856626629829407,
+        1.7545878887176514
+      ],
+      "min": [
+        -0.5856623649597168,
+        -1.1958661079406738
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1987416,
+      "componentType": 5125,
+      "count": 8352,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2509656,
+      "componentType": 5126,
+      "count": 1302,
+      "max": [
+        249.64691162109375,
+        217.7353057861328,
+        -97.40472412109375
+      ],
+      "min": [
+        -249.60784912109375,
+        -217.7353057861328,
+        -118.70405578613281
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2525280,
+      "componentType": 5126,
+      "count": 1302,
+      "max": [
+        1.0,
+        1.0,
+        0.9548423290252686
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 836552,
+      "componentType": 5126,
+      "count": 1302,
+      "max": [
+        0.5189768075942993,
+        0.5188523530960083
+      ],
+      "min": [
+        -0.4829768240451813,
+        -0.48290959000587463
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2020824,
+      "componentType": 5125,
+      "count": 4320,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2540904,
+      "componentType": 5126,
+      "count": 170,
+      "max": [
+        7.8791823387146,
+        8.010857582092285,
+        279.00390625
+      ],
+      "min": [
+        -8.462329864501953,
+        -9.141480445861816,
+        7.929840087890625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2542944,
+      "componentType": 5126,
+      "count": 170,
+      "max": [
+        0.9944312572479248,
+        0.9622963666915894,
+        0.8996713161468506
+      ],
+      "min": [
+        -0.9925992488861084,
+        -0.9590078592300415,
+        -0.9190738797187805
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 846968,
+      "componentType": 5126,
+      "count": 170,
+      "max": [
+        10.109136581420898,
+        0.38908371329307556
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2038104,
+      "componentType": 5125,
+      "count": 816,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2544984,
+      "componentType": 5126,
+      "count": 15589,
+      "max": [
+        262.4443054199219,
+        237.3167266845703,
+        -161.70480346679688
+      ],
+      "min": [
+        -262.4052429199219,
+        -237.31675720214844,
+        -417.1453857421875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2732052,
+      "componentType": 5126,
+      "count": 15589,
+      "max": [
+        0.9998507499694824,
+        0.9998546242713928,
+        1.0
+      ],
+      "min": [
+        -0.9998508095741272,
+        -0.9998546242713928,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 848328,
+      "componentType": 5126,
+      "count": 15589,
+      "max": [
+        258.1639099121094,
+        75.90833282470703
+      ],
+      "min": [
+        -29.83302116394043,
+        -29.951719284057617
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2041368,
+      "componentType": 5125,
+      "count": 19590,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2919120,
+      "componentType": 5126,
+      "count": 21104,
+      "max": [
+        304.37835693359375,
+        272.1666564941406,
+        -50.45873260498047
+      ],
+      "min": [
+        -304.33929443359375,
+        -272.16668701171875,
+        -205.08331298828125
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3172368,
+      "componentType": 5126,
+      "count": 21104,
+      "max": [
+        0.9999932050704956,
+        0.999993085861206,
+        1.0
+      ],
+      "min": [
+        -0.999993085861206,
+        -0.9999931454658508,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 973040,
+      "componentType": 5126,
+      "count": 21104,
+      "max": [
+        18.103513717651367,
+        32.98488235473633
+      ],
+      "min": [
+        -111.37000274658203,
+        -19.860206604003906
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2119728,
+      "componentType": 5125,
+      "count": 116520,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3425616,
+      "componentType": 5126,
+      "count": 21218,
+      "max": [
+        256.2276916503906,
+        222.8130340576172,
+        -135.20187377929688
+      ],
+      "min": [
+        -256.1886291503906,
+        -222.81304931640625,
+        -376.1188659667969
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3680232,
+      "componentType": 5126,
+      "count": 21218,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1141872,
+      "componentType": 5126,
+      "count": 21218,
+      "max": [
+        121.57866668701172,
+        8.509105682373047
+      ],
+      "min": [
+        -40.90153121948242,
+        -7.464561462402344
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2585808,
+      "componentType": 5125,
+      "count": 42534,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3934848,
+      "componentType": 5126,
+      "count": 3168,
+      "max": [
+        78.08173370361328,
+        77.7138671875,
+        -2.3741226196289063
+      ],
+      "min": [
+        -78.0798568725586,
+        -78.49837493896484,
+        -306.53759765625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3972864,
+      "componentType": 5126,
+      "count": 3168,
+      "max": [
+        0.9802601337432861,
+        0.9800065755844116,
+        -0.1970217078924179
+      ],
+      "min": [
+        -0.9802693128585815,
+        -0.980018675327301,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 33408,
+      "componentType": 5126,
+      "count": 3168,
+      "max": [
+        0.9991276860237122,
+        0.9987332820892334,
+        0.08559979498386383,
+        1.0
+      ],
+      "min": [
+        -0.9986312389373779,
+        -1.0,
+        -0.9803929924964905,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1311616,
+      "componentType": 5126,
+      "count": 3168,
+      "max": [
+        0.964890718460083,
+        21.951139450073242
+      ],
+      "min": [
+        -0.7123677730560303,
+        -5.344048023223877
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2755944,
+      "componentType": 5125,
+      "count": 16272,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "LIGHTSTAR GROUP (https://sketchfab.com/LIGHT_STAR_GROUP)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/719068-artifici-osgona-chandelier-10cec813ef3049939eb02b09a68e45b8",
+      "title": "719068 Artifici Osgona chandelier"
+    },
+    "generator": "Sketchfab-15.55.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 2821032,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1336960,
+      "byteOffset": 2821032,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4010880,
+      "byteOffset": 4157992,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 84096,
+      "byteOffset": 8168872,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 8252968,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_emissive_strength",
+    "KHR_materials_clearcoat",
+    "KHR_materials_transmission"
+  ],
+  "images": [
+    {
+      "uri": "textures/Metal_Gold_Pink_risunok_normal.png"
+    },
+    {
+      "uri": "textures/Metal_Gold_Pink_polosi_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Metal_Gold_Pink_simple",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7835377915261933,
+          0.4178850708481375,
+          0.2622506575296961,
+          1.0
+        ],
+        "roughnessFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Metal_Gold_Pink_risunok",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7835377915261933,
+          0.4178850708481375,
+          0.2622506575296961,
+          1.0
+        ],
+        "roughnessFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 10.0
+        }
+      },
+      "name": "Spiral",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Metal_Chrome_for_Bulb",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.732532985489547,
+          0.5365046112418731,
+          0.3874591697933575,
+          1.0
+        ],
+        "roughnessFactor": 0.3057187068687716
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Plastic_gray",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5612388103215987,
+          0.5612388103215987,
+          0.5612388103215987,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 1.0,
+          "clearcoatRoughnessFactor": 0.04
+        },
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1.0
+        }
+      },
+      "name": "Glass_Crystal_Disp",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          0.25
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.0
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 1.0,
+          "clearcoatRoughnessFactor": 0.04
+        },
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1.0
+        }
+      },
+      "name": "Glass_Crystal_Clear",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          0.25
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Material_23",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.7358059308873911,
+          0.49203814104980514,
+          1.0
+        ],
+        "roughnessFactor": 0.1901954167654695
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Metal_Gold_Pink_polosi",
+      "normalTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7835377915261933,
+          0.4178850708481375,
+          0.2622506575296961,
+          1.0
+        ],
+        "roughnessFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "719068_Artifici_Osgona_Metal_Gold_Pink_simple_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "719068_Artifici_Osgona_Metal_Gold_Pink_simple_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "719068_Artifici_Osgona_Metal_Gold_Pink_risunok_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TANGENT": 10,
+            "TEXCOORD_0": 11
+          },
+          "indices": 12,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "719068_Artifici_Osgona_Spiral_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 14,
+            "POSITION": 13,
+            "TEXCOORD_0": 15
+          },
+          "indices": 16,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "719068_Artifici_Osgona_Metal_Chrome_for_Bulb_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 18,
+            "POSITION": 17,
+            "TEXCOORD_0": 19
+          },
+          "indices": 20,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "719068_Artifici_Osgona_Plastic_gray_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 22,
+            "POSITION": 21,
+            "TEXCOORD_0": 23
+          },
+          "indices": 24,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "719068_Artifici_Osgona_Glass_Crystal_Disp_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 26,
+            "POSITION": 25,
+            "TEXCOORD_0": 27
+          },
+          "indices": 28,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "719068_Artifici_Osgona_Glass_Crystal_Clear_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 30,
+            "POSITION": 29,
+            "TEXCOORD_0": 31
+          },
+          "indices": 32,
+          "material": 6,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "719068_Artifici_Osgona_Material #23_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 34,
+            "POSITION": 33,
+            "TEXCOORD_0": 35
+          },
+          "indices": 36,
+          "material": 7,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "719068_Artifici_Osgona_Metal_Gold_Pink_polosi_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 38,
+            "POSITION": 37,
+            "TANGENT": 39,
+            "TEXCOORD_0": 40
+          },
+          "indices": 41,
+          "material": 8,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "3ca1977fd5ae4e8690885a4df3b39fa8.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "719068_Artifici_Osgona"
+    },
+    {
+      "mesh": 0,
+      "name": "719068_Artifici_Osgona_Metal_Gold_Pink_simple_0"
+    },
+    {
+      "mesh": 1,
+      "name": "719068_Artifici_Osgona_Metal_Gold_Pink_simple_0"
+    },
+    {
+      "mesh": 2,
+      "name": "719068_Artifici_Osgona_Metal_Gold_Pink_risunok_0"
+    },
+    {
+      "mesh": 3,
+      "name": "719068_Artifici_Osgona_Spiral_0"
+    },
+    {
+      "mesh": 4,
+      "name": "719068_Artifici_Osgona_Metal_Chrome_for_Bulb_0"
+    },
+    {
+      "mesh": 5,
+      "name": "719068_Artifici_Osgona_Plastic_gray_0"
+    },
+    {
+      "mesh": 6,
+      "name": "719068_Artifici_Osgona_Glass_Crystal_Disp_0"
+    },
+    {
+      "mesh": 7,
+      "name": "719068_Artifici_Osgona_Glass_Crystal_Clear_0"
+    },
+    {
+      "mesh": 8,
+      "name": "719068_Artifici_Osgona_Material #23_0"
+    },
+    {
+      "mesh": 9,
+      "name": "719068_Artifici_Osgona_Metal_Gold_Pink_polosi_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}

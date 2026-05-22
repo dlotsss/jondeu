@@ -1,0 +1,11 @@
+Model Information:
+* title:	Chandelier
+* source:	https://sketchfab.com/3d-models/chandelier-850e1083539d47ea8989bc7c01cea795
+* author:	samsikua (https://sketchfab.com/samsikua)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Chandelier" (https://sketchfab.com/3d-models/chandelier-850e1083539d47ea8989bc7c01cea795) by samsikua (https://sketchfab.com/samsikua) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
