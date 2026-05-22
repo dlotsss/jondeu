@@ -1,0 +1,1 @@
+globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/api/send-order/route"]={"moduleLoading":{"prefix":"/_next/"},"ssrModuleMapping":{},"edgeSSRModuleMapping":{},"clientModules":{},"entryCSSFiles":{"/Users/dasaevasophia/Desktop/jondeu1/my-3d-planner/src/app/api/send-order/route":[]},"rscModuleMapping":{},"edgeRscModuleMapping":{}};
