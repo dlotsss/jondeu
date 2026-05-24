@@ -1,156 +1,69 @@
-import { useGLTF, MeshTransmissionMaterial } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Environment, ContactShadows } from '@react-three/drei';
+import { Suspense } from 'react';
+import Room from './Room';
+import ChandelierLoader from './ChandelierLoader';
 import { usePlannerStore } from '@/store/usePlannerStore';
-import type { ChandelierPlacement } from '@/store/usePlannerStore';
-import { useRef, useMemo } from 'react';
-import * as THREE from 'three';
 
-const MODEL_TARGET_HEIGHT = 0.9;
-
-function ActualChandelier({ file }: { file: string }) {
-  const { scene } = useGLTF(`/models/${file}`);
-  
-  const { clonedScene, modelOffset, modelScale } = useMemo(() => {
-    const clone = scene.clone(true);
-    const box = new THREE.Box3();
-    const center = new THREE.Vector3();
-    const size = new THREE.Vector3();
-    const meshBox = new THREE.Box3();
-    let hasMeshes = false;
-
-    clone.updateMatrixWorld(true);
-
-    clone.traverse((child) => {
-      const mesh = child as THREE.Mesh;
-      if (!mesh.isMesh) return;
-
-      meshBox.setFromObject(mesh);
-      if (!meshBox.isEmpty()) {
-        box.union(meshBox);
-        hasMeshes = true;
-      }
-    });
-
-    if (!hasMeshes || box.isEmpty()) {
-      box.setFromObject(clone);
-    }
-
-    box.getCenter(center);
-    box.getSize(size);
-
-    const verticalSize = size.y || Math.max(size.x, size.z, 1);
-    const scale = MODEL_TARGET_HEIGHT / verticalSize;
-
-    // Center the model on X/Z and place its top at local Y=0 so it hangs down from the cable.
-    const offset = new THREE.Vector3(
-      -center.x * scale,
-      -box.max.y * scale,
-      -center.z * scale,
-    );
-
-    return { clonedScene: clone, modelOffset: offset, modelScale: scale };
-  }, [scene]);
-
-  useMemo(() => {
-    clonedScene.traverse((child) => {
-      const mesh = child as THREE.Mesh;
-      if (mesh.isMesh) {
-        mesh.castShadow = true;
-        mesh.receiveShadow = true;
-        
-        // Improve materials for crystal/glass parts
-        if (mesh.name.toLowerCase().includes('crystal') || mesh.name.toLowerCase().includes('glass')) {
-          mesh.material = new THREE.MeshPhysicalMaterial({
-            transmission: 1.0,
-            thickness: 0.15,
-            roughness: 0.0,
-            ior: 1.52,
-          });
-        }
-      }
-    });
-  }, [clonedScene]);
+export default function CanvasContainer() {
+  const { isMobile, isEveningMode, chandelierPlacements } = usePlannerStore();
 
   return (
-    <group position={[0, 2.34, 0]}>
-      <primitive
-        key={file}
-        object={clonedScene}
-        scale={modelScale}
-        position={modelOffset}
-      />
-    </group>
-  );
-}
-
-function PlacedChandelier({ placement }: { placement: ChandelierPlacement }) {
-  const groupRef = useRef<THREE.Group>(null);
-
-  const suspensionElements = (
-    <group position={[placement.x, 0, placement.z]}>
-      <mesh position={[0, 2.68, 0]} castShadow>
-        <cylinderGeometry args={[0.08, 0.08, 0.04, 16]} />
-        <meshStandardMaterial color="#222222" metalness={0.9} roughness={0.1} />
-      </mesh>
-      <mesh position={[0, 2.45, 0]} castShadow>
-        <cylinderGeometry args={[0.004, 0.004, 0.42, 8]} />
-        <meshStandardMaterial color="#111111" metalness={0.8} roughness={0.2} />
-      </mesh>
-      <pointLight
-        position={[0, 2.2, 0]}
-        intensity={1.35}
-        distance={5}
-        decay={2}
-        color="#ffeacc"
-        castShadow
-      />
-    </group>
-  );
-
-  if (placement.chandelier.file) {
-    return (
-      <group ref={groupRef}>
-        {suspensionElements}
-        <group position={[placement.x, 0, placement.z]}>
-          <ActualChandelier key={placement.chandelier.file} file={placement.chandelier.file} />
-        </group>
-      </group>
-    );
-  }
-
-  return (
-    <group ref={groupRef} dispose={null}>
-      {suspensionElements}
-      <group position={[placement.x, 2.2, placement.z]}>
-        <mesh position={[0, 0.2, 0]} castShadow receiveShadow>
-          <cylinderGeometry args={[0.02, 0.02, 0.4]} />
-          <meshStandardMaterial color="#d4af37" metalness={0.9} roughness={0.1} />
-        </mesh>
-        <mesh position={[0, 0, 0]} castShadow receiveShadow>
-          <sphereGeometry args={[0.25, 32, 32]} />
-          <MeshTransmissionMaterial
-            thickness={0.2}
-            roughness={0.0}
-            transmission={1.0}
-            ior={1.52}
-            chromaticAberration={0.05}
-            backside={true}
+    <div className="w-full h-full relative">
+      <Canvas
+        className="h-full w-full"
+        style={{ width: '100%', height: '100%' }}
+        shadows
+        dpr={isMobile ? 1.0 : 1.5}
+        camera={{ position: [0, 1.8, 4.5], fov: 60 }}
+        gl={{ powerPreference: "high-performance", antialias: true }} 
+      >
+        <Suspense fallback={null}>
+          {/* Мягкий рассеянный свет (меняется в зависимости от времени суток) */}
+          <ambientLight intensity={isEveningMode ? 0.08 : 0.4} />
+          
+          {/* Направленный солнечный свет днем */}
+          <directionalLight 
+            position={[5, 8, 3]} 
+            intensity={isEveningMode ? 0.02 : 0.8} 
+            castShadow={!isEveningMode}
+            shadow-mapSize-width={2048}
+            shadow-mapSize-height={2048}
+            shadow-bias={-0.0001}
           />
-        </mesh>
-      </group>
-    </group>
-  );
-}
 
-export default function ChandelierLoader() {
-  const { chandelierPlacements } = usePlannerStore();
+          {/* Вспомогательный источник света, если наступил вечер, но люстр нет */}
+          {isEveningMode && chandelierPlacements.length === 0 && (
+            <pointLight
+              position={[0, 2.6, 0]}
+              intensity={1.0}
+              distance={6}
+              color="#ffffff"
+              castShadow
+            />
+          )}
+          
+          {/* HDR-карта для создания физически точных отражений в металле и хрустале */}
+          <Environment preset={isEveningMode ? "night" : "city"} /> 
 
-  if (chandelierPlacements.length === 0) return null;
+          <Room />
+          <ChandelierLoader />
 
-  return (
-    <group>
-      {chandelierPlacements.map((placement) => (
-        <PlacedChandelier key={placement.id} placement={placement} />
-      ))}
-    </group>
+          {/* Реалистичные мягкие тени под люстрой и на стыках стен */}
+          <ContactShadows position={[0, 0.01, 0]} opacity={isEveningMode ? 0.6 : 0.4} scale={10} blur={2.5} />
+
+          {/* Управление камерой — разрешаем смотреть вверх на потолок */}
+          <OrbitControls 
+            enableDamping 
+            dampingFactor={0.08}
+            maxPolarAngle={Math.PI * 0.85}
+            minPolarAngle={0.1}
+            minDistance={1.2}
+            maxDistance={8}
+            target={[0, 1.0, 0]}
+          />
+        </Suspense>
+      </Canvas>
+    </div>
   );
 }
